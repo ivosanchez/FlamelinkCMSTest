@@ -1,0 +1,120 @@
+/* scss transforming into css creates all the cross browser code automatically */
+/* scss uses variables so in case of changes the work is minimised */
+/* scss uses nesting of variables to minimise code */
+
+/* you can separate certain parts of the markup, and work with component based markup */
+/* use mixin/ include function for certain elements that are often used together */
+/* use extend function to use variables from certain super-element */
+/* use calculations to minimise the work in case of changes, works fine with animations */
+
+$headerBackground : #18b378;
+$buttonColour :  #003e79;
+$buttonHoverColour : #0ce4f3;
+$buttonBodyColour : #72b803;
+
+header {
+    background-color: $headerBackground;
+    display: flex;
+    justify-content: center;
+    height: 5vw;
+  }
+
+table {
+    border-collapse: collapse;
+  }
+
+table tr td {
+    border: 1px solid #000;
+    padding: 10px;
+  }
+
+#check{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4000px;
+}
+
+#edit_screen{
+  position: absolute;
+  top: 200px;
+  height: 450px;
+  width: 450px;
+  background-color: white;
+  border: 5px solid blue;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#dep_txt{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+
+#dep_edit{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#naam_txt{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);  
+  font-weight: bold;
+}
+
+#naam_edit{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);  
+}
+
+#positie_txt{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);   
+  font-weight: bold;
+}
+
+#positie_edit{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);  
+}
+
+#werkid_txt{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);   
+  font-weight: bold;
+}
+
+#werkid_edit{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);  
+}
+
+#saveedit_id{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);    
+}
+
+
+#cms_image{
+  height: 400px;
+  width: 400px;
+}

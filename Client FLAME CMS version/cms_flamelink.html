@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang = "en">  <!–– language check you can perform ––>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1";>                   <!–– necessary to make the website responsive, zoom level to 1 ––>
+        <title>Vue Firestore</title>
+        <meta name="description" content="Vue Firestore">                  <!–– this part will be used in SEM, result of content decisions ––>
+        <meta name="author" content="Niels"> 
+        <link rel="stylesheet" href="./styles/vuefirestore_markup.css">                                           <!–– make sure this refers to the right css sheet ––>
+
+    </head>
+    
+    <body>
+    
+        <header></header>
+        
+        <section id="section_1">
+
+            <!-- <input type="file">
+            <br>
+            <br> -->
+
+            <div id="check">
+
+                <!-- THIS PART COVERS THE AUTHENTICATION SECTION  -->
+                <!-- put in table from array
+                <button id="table_sql" onclick="showTable()">Show SQL Table</button>
+                <div id="table_div"></div>
+                <br>
+                <br> -->
+
+                <!-- <div>email address</div>
+                <input type="email" id="email_text" />
+                <div>password</div>
+                <input type="text" id="password_text" />
+                <button id="log_in" onclick="loginFunction()">Log In</button>
+                <button id="sign_up" onclick="signupFunction()">Sign Up</button>
+                <button id="log_out" onclick="logoutFunction()">Log Out</button>
+
+                <br> 
+                <br> 
+                <button id="delete_knop" onclick="verwijderFunction()">Verwijderen User</button>
+                <button id="user_change_check" onclick="getuserProfile()">User Verandering</button>  
+
+                <br>
+                <br> -->
+                
+                <!-- THIS PART COVERS THE REALTIME FIRESTORE SECTION  -->
+                <div id="form_div">
+                    <div>departement</div>
+                    <input type="text" id="departement" />
+                    <br>
+                    <div>naam</div>
+                    <input type="text" id="naam" />
+                    <br>
+                    <div>positie</div>
+                    <input type="text" id="positie" />
+                    <br>                
+                    <div>werknemer id</div>
+                    <input type="text" id="werknemer_id" />
+                    <br>    
+                </div>
+
+                <br>
+                <!-- <hr>
+                <br> -->
+
+                <!-- <button id="save_knop" id="saveData()">Save</button> -->
+
+                <button id="verschijn_knop" onclick="retrieveData()">RETRIEVE</button>
+
+                <button id="toevoegen_knop" onclick="addData()">Toevoeg</button>
+
+                <br>
+                <hr>
+                <br>
+
+                <div id="realtime_table">
+                    
+                </div>
+
+                <br>
+                <p>Select All : <span><input type="checkbox" onclick="checkAll()" id="sel_all"></span></p>
+                <br>
+                <hr>
+                <br>
+
+                <button id="delete_werkn" onclick="deleteWerknemer()">Delete</button>
+                <button id="edit_werkn" onclick="changeWerknemer()">Edit</button>
+
+                <!-- <br> 
+                <br> 
+                <button id="nested_table" onclick="showNestedTable()">Show Nested Part</button>
+                <table id="nested_tabel"></table> -->
+
+                <p id="cms_input"></p>
+
+                <p id="cms_rt_input"></p>
+
+                <img id="cms_image">
+
+                <br>
+                <hr>
+                <br>
+                <br>
+                <hr>
+                <br>
+                
+                </div> 
+
+            </section>
+
+
+
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+
+        <!-- Firebase Products to use  -->
+        <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-storage.js"></script>
+
+        <!-- Flamelink core SDK  -->
+        <script src="//cdn.jsdelivr.net/npm/flamelink@next/flamelink.js"></script>
+
+        <script src="scripts/firebase.js"></script>
+        <script src="scripts/table_array.js"></script>
+
+    </body>
+    </html>
+    
