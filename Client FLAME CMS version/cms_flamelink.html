@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang = "en">  <!–– language check you can perform ––>
-    
+<html lang="en">
+<!–– language check you can perform ––>
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1";>                   <!–– necessary to make the website responsive, zoom level to 1 ––>
-        <title>Vue Firestore</title>
-        <meta name="description" content="Vue Firestore">                  <!–– this part will be used in SEM, result of content decisions ––>
-        <meta name="author" content="Niels"> 
-        <link rel="stylesheet" href="./styles/vuefirestore_markup.css">                                           <!–– make sure this refers to the right css sheet ––>
+        <meta name="viewport" content="width=device-width, initial-scale=1" ;>
+        <!–– necessary to make the website responsive, zoom level to 1 ––>
+            <title>Vue Firestore</title>
+            <meta name="description" content="Vue Firestore">
+            <!–– this part will be used in SEM, result of content decisions ––>
+                <meta name="author" content="Niels">
+                <link rel="stylesheet" href="./styles/vuefirestore_markup.css">
+                <!–– make sure this refers to the right css sheet ––>
 
     </head>
-    
+
     <body>
-    
+
         <header></header>
-        
+
         <section id="section_1">
 
             <!-- <input type="file">
@@ -39,14 +43,14 @@
                 <button id="sign_up" onclick="signupFunction()">Sign Up</button>
                 <button id="log_out" onclick="logoutFunction()">Log Out</button>
 
-                <br> 
-                <br> 
+                <br>
+                <br>
                 <button id="delete_knop" onclick="verwijderFunction()">Verwijderen User</button>
-                <button id="user_change_check" onclick="getuserProfile()">User Verandering</button>  
+                <button id="user_change_check" onclick="getuserProfile()">User Verandering</button>
 
                 <br>
                 <br> -->
-                
+
                 <!-- THIS PART COVERS THE REALTIME FIRESTORE SECTION  -->
                 <div id="form_div">
                     <div>departement</div>
@@ -57,10 +61,10 @@
                     <br>
                     <div>positie</div>
                     <input type="text" id="positie" />
-                    <br>                
+                    <br>
                     <div>werknemer id</div>
                     <input type="text" id="werknemer_id" />
-                    <br>    
+                    <br>
                 </div>
 
                 <br>
@@ -78,7 +82,7 @@
                 <br>
 
                 <div id="realtime_table">
-                    
+
                 </div>
 
                 <br>
@@ -90,8 +94,8 @@
                 <button id="delete_werkn" onclick="deleteWerknemer()">Delete</button>
                 <button id="edit_werkn" onclick="changeWerknemer()">Edit</button>
 
-                <!-- <br> 
-                <br> 
+                <!-- <br>
+                <br>
                 <button id="nested_table" onclick="showNestedTable()">Show Nested Part</button>
                 <table id="nested_tabel"></table> -->
 
@@ -107,12 +111,10 @@
                 <br>
                 <hr>
                 <br>
-                
-                </div> 
 
-            </section>
+            </div>
 
-
+        </section>
 
 
         <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
@@ -124,11 +126,17 @@
         <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-storage.js"></script>
 
         <!-- Flamelink core SDK  -->
-        <script src="//cdn.jsdelivr.net/npm/flamelink@next/flamelink.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/flamelink@next/flamelink-app.js"></script>
+        <!-- // The following are all optional depending on your use case -->
+        <script src="//cdn.jsdelivr.net/npm/flamelink@next/flamelink-content-cf.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/flamelink@next/flamelink-navigation-cf.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/flamelink@next/flamelink-storage-cf.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/flamelink@next/flamelink-settings-cf.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/flamelink@next/flamelink-users-cf.js"></script>
 
         <script src="scripts/firebase.js"></script>
         <script src="scripts/table_array.js"></script>
 
     </body>
-    </html>
-    
+
+</html>
